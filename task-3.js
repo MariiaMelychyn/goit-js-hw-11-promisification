@@ -2,7 +2,7 @@ const randomIntegerFromInterval = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1) + min);
   };
   
-  const makeTransaction = (transaction, onSuccess, onError) => {
+  const makeTransaction = (transaction) => {
     return new Promise((resolve, reject) => {
     const delay = randomIntegerFromInterval(200, 500);
   
